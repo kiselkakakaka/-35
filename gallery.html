@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/fava.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Выбрать участок</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="hd-info">
+                <div class="hd-left">
+                    <div class="hd-logo">
+                        <a href="./index.html"><img src="./img/logo.png" alt="Земля35"></a>
+                    </div>
+                    <a href="./select.html" class="hd-catalog">
+                        <img src="./img/Icon1.svg" alt="">
+                        <p>Выбрать участок</p>
+                    </a>
+                </div>
+                <div class="hd-right">
+                    <div class="hd-main">
+                        <a href="./about_us.html">О нас</a>
+                        <a href="./gallery.html#office">Контакты</a>
+                        <a href="./mortgage.html">Рассрочка</a>
+                        <a href="./installment.html">Ипотека</a>
+                    </div>
+                    <a href="#" class="hd-auth" onclick="openLoginModal()">
+                        <img src="./img/Icon2.svg" alt="">
+                        <p>Войти</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="./index.html">Главная</a>
+            <a href="./select.html">&bull; Выбрать участок</a>
+            <a href="./gallery.html" style="color: var(--accent);">&bull; Фото и видео</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="heading">Коттеджный поселок <span>«Непотягово»</span>
+    </div>
+    <div class="gallery">
+        <div class="container">
+            <div class="gl-imgs">
+                <div class="imgs">
+                    <img src="./img/DJI_0189.png" alt="">
+                    <img src="./img/DJI_0199.png" alt="">
+                </div>
+                <div class="imgs2">
+                    <img src="./img/DJI_0195.png" alt="">
+                    <img src="./img/DJI_0148.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order_call">
+        <div class="container">
+            <div class="call-main">
+                <div class="call-main_left">
+                    <div class="title">Не можете определиться? <br> Свяжитесь с нами!</div>
+                </div>
+                <div class="call-main_right">
+                    <a class="bt-call" href="javascript:void(0)" onclick="openFeedbackModal()">Позвонить</a>
+                    <a class="bt-call min" href="javascript:void(0)" onclick="openFeedbackModal()">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery end">
+        <div class="container">
+            <div class="gl-img">
+                <img src="./img/DJI_0089.png" alt="">
+            </div>
+            <div class="gl-imgs">
+                <div class="imgs2">
+                    <img src="./img/DJI_0152.png" alt="">
+                </div>
+                <div class="imgs">
+                    <img src="./img/DJI_0198.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-info" id="office">
+                    <div class="ft-local">
+                        <p>Главный офис</p>
+                        <p class="light">Бизнес Центр "Bellagio"<br>Часы работы: с 10:00 до 19:00</p>
+                    </div>
+                    <div class="ft-mess">
+                        <p>Обратная связь</p>
+                        <p class="light">Есть жалоба или предложение?</p>
+                        <a href="javascript:void(0)" onclick="openFeedbackModal()" class="bt-ft">Написать директору</a>
+                    </div>
+                </div>
+                <div class="footer-menu">
+                    <div class="ft-company">
+                        <p>Компания</p>
+                        <a class="light" href="./about_us.html">О компании</a>
+                    </div>
+                    <div class="ft-service">
+                        <p>Сервис</p>
+                        <a class="light" href="./mortgage.html">Рассрочка</a>
+                        <a class="light" href="./installment.html">Ипотека</a>
+                    </div>
+                    <div class="ft-social">
+                        <p>Соцсети</p>
+                        <a class="light" href="#">ВКонтакте</a>
+                        <a class="light" href="#">Telegram</a>
+                        <a class="light" href="#">YouTube</a>
+                    </div>
+                    <div class="ft-contact">
+                        <p class="light">Телефон</p>
+                        <a target="_blank" href="tel:+749518916">+7 (495) 189-68-16</a>
+                        <p class="light">Почта</p>
+                        <a target="_blank" href="mailto:info@good-zem.com">info@good-zem.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-botoom">
+                <div class="ft-logo">
+                    <img src="./img/logo.png" alt="Земля35">
+                    <p class="light">© 2025 ИП Чикунов А.Н.</p>
+                </div>
+                <div class="ft-info">
+                    <div class="ft-accord light">
+                        <p>Обращаем ваше внимание на то, что вся представленная на сайте информация носит
+                            исключительно
+                            информационный характер и ни при каких условиях не является публичной офертой,
+                            определяемой
+                            положениями Статьи 437(2) Гражданского кодекса Российской Федерации. </p>
+                    </div>
+                    <div class="ft-accord light">
+                        <p>К нашему сайту подключен сервис веб-аналитики Яндекс. Метрика, использующий cookie.
+                            Оставаясь
+                            на сайте, выдаете свое согласие на обработку персональных данных с помощью этого сервиса
+                            в порядке, указанном в <a target="_blank" href="./according.html">Политике
+                                конфиденциальности.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copirat">
+                <p>Разработано Климасей</p>
+            </div>
+            <div id="authModal" class="modal">
+                <div class="modal-content">
+                    <span class="close"><img src="./img/close.png" alt=""></span>
+                    <div class="modal-content__top">
+                        <h2>Создайте аккаунт!</h2>
+                        <form class="modal-input_wrapper">
+                            <input type="text" placeholder="Логин" required>
+                            <input type="password" placeholder="Пароль" required>
+                            <div class="check-modal">
+                                <input type="checkbox" id="agreeCheckbox" required>
+                                <label for="agreeCheckbox">Я предпочитаю не получать уведомления по электронной почте о
+                                    рекламных акциях Земля35.</label>
+                            </div>
+                            <button type="submit" class="btn">Зарегестрироваться</button>
+                        </form>
+                    </div>
+                    <div class="modal-content__bot">
+                        <div class="modal-content__bot-head">
+                            <a href="#" onclick="openGoogleAuth()" class="bt-modal"><img src="./img/google.png"
+                                    alt="">Войти
+                                с
+                                помощью
+                                Google</a>
+                            <div class="have_acc">
+                                <p class="bold">У вас уже есть аккаунт?</p> <a href="#" onclick="openLoginModal()"
+                                    class="bold">Войти</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            Продолжая, я соглашаюсь с <a target="_blank" href="./according.html">политикой
+                                конфиденциальности</a>
+                            и политикой обработки персональных данных=
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <span class="close"><img src="./img/close.png" alt=""></span>
+                    <form class="modal-content__top">
+                        <h2>Войдите в свой аккаунт!</h2>
+                        <div class="modal-input_wrapper">
+                            <input type="text" placeholder="Логин" required>
+                            <input type="password" placeholder="Пароль" required>
+                            <button type="submit" class="btn">Войти</button>
+                        </div>
+                    </form>
+                    <div class="modal-content__bot">
+                        <div class="modal-content__bot-head">
+                            <a href="#" onclick="openGoogleAuth()" class="bt-modal">
+                                <img src="./img/google.png" alt="">Войти с помощью Google
+                            </a>
+                            <div class="have_acc">
+                                <p class="bold">У вас еще нет аккаунта?</p> <a href="#" onclick="openRegisterModal()"
+                                    class="bold">Зарегистрироваться</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            Продолжая, я соглашаюсь с <a target="_blank" href="./according.html">политикой
+                                конфиденциальности</a>
+                            и политикой обработки персональных данных
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="feedbackModal" class="writemodal">
+                <form class="modal-content">
+                    <div class="modal-main">
+                        <span class="close"><img src="./img/close.png" alt=""></span>
+                        <h2>Обращение в Земля35</h2>
+                        <p>Напишите ваше обращение, мы обязательно рассмотрим его</p>
+                        <div class="input-form">
+                            <input type="text" placeholder="Ваше имя" required>
+                            <div class="input-flex">
+                                <input type="text" placeholder="Номер телефона" required>
+                                <input type="email" placeholder="Почта" required>
+                            </div>
+                            <textarea placeholder="Ваше обращение" required></textarea>
+                        </div>
+                    </div>
+                    <button href="#" type="submit" class="btn">Отправить</button>
+                    <p>Нажимая на кнопку, я соглашаюсь <a target="_blank" href="./according.html">с политикой
+                            конфиденциальности</a> и политикой обработки персональных
+                        данных</p>
+                </form>
+            </div>
+            <div id="modal_return" class="modal">
+                <div class="modal-content">
+                    <p>Заявка успешно отправлена, мы свяжемся с вами в течение дня</p>
+                </div>
+            </div>
+            <script src="./js/script.js"></script>
+        </div>
+    </footer>
+</body>
+
+</html>

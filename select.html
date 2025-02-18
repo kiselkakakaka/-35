@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/fava.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/select.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Выбрать участок</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="hd-info">
+                <div class="hd-left">
+                    <div class="hd-logo">
+                        <a href="./index.html"><img src="./img/logo.png" alt="Земля35"></a>
+                    </div>
+                    <a href="./select.html" class="hd-catalog">
+                        <img src="./img/Icon1.svg" alt="">
+                        <p>Выбрать участок</p>
+                    </a>
+                </div>
+                <div class="hd-right">
+                    <div class="hd-main">
+                        <a href="./about_us.html">О нас</a>
+                        <a href="./select.html#office">Контакты</a>
+                        <a href="./mortgage.html">Рассрочка</a>
+                        <a href="./installment.html">Ипотека</a>
+                    </div>
+                    <a href="#" class="hd-auth" onclick="openLoginModal()">
+                        <img src="./img/Icon2.svg" alt="">
+                        <p>Войти</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="./index.html">Главная</a>
+            <a href="./select.html" style="color: var(--accent);">&bull; Выбрать участок</a>
+        </div>
+    </div>
+    <div class="baner">
+        <div class="container">
+            <div class="baner-info">
+                <div class="baner-main">
+                    <a href="./gallery.html">Смотреть фото и видео</a>
+                    <h1>Выбери свой участок в коттеджном поселке <span>«Непотягово»</span>
+                    </h1>
+                    <p>Небольшой и уютный коттеджный посёлок.<br>
+                        Рассчитан всего на 41 участок.<br>
+                        Стоимость сотки от 110 000 рублей.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carta">
+        <div class="container">
+            <div class="carta-main">
+                <div class="carta-img">
+                    <img src="./img/карта2.png" alt="">
+                </div>
+                <div class="carta-info">
+                    <div class="crt-category">
+                        <div class="crt-category_item">
+                            <img src="./img/elips1.png" alt="">
+                            <p>Свободен</p>
+                        </div>
+                        <div class="crt-category_item">
+                            <img src="./img/elips2.png" alt="">
+                            <p>Забронирован</p>
+                        </div>
+                        <div class="crt-category_item">
+                            <img src="./img/elips3.png" alt="">
+                            <p>Продан</p>
+                        </div>
+                    </div>
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Поиск...">
+                        <ul id="resultsList">
+                            <li>1 участок - 1561 кв.м.</li>
+                            <li>2 участок - 1456 кв.м.</li>
+                            <li>3 участок - 1332 кв.м.</li>
+                            <li>4 участок - 1678 кв.м.</li>
+                            <li>5 участок - 1438 кв.м.</li>
+                            <li>6 участок - 1473 кв.м.</li>
+                            <li>7 участок - 1234 кв.м.</li>
+                            <li>8 участок - 1530 кв.м.</li>
+                            <li>9 участок - 1530 кв.м.</li>
+                            <li>10 участок - 1530 кв.м.</li>
+                            <li>11 участок - 1530 кв.м.</li>
+                            <li>12 участок - 1530 кв.м.</li>
+                        </ul>
+                    </div>
+                    <div class="buttons-container">
+                        <a href="javascript:void(0)" onclick="openFeedbackModal()" class="green-button">Забронировать
+                            участок</button>
+                            <a download href="./img/test.pdf" class="green-button">Скачать документацию</a>
+                    </div>
+                </div>
+                <script>document.getElementById('searchInput').addEventListener('input', function () {
+                        const filter = this.value.toLowerCase();
+                        const listItems = document.querySelectorAll('#resultsList li');
+
+                        listItems.forEach(item => {
+                            const text = item.textContent.toLowerCase();
+                            if (text.includes(filter)) {
+                                item.style.display = '';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    });</script>
+            </div>
+        </div>
+    </div>
+    <div class="forms">
+        <div class="container">
+            <div class="back-form">
+                <form class="app-form">
+                    <div class="head-form">
+                        <h2>Получите эклюзивный <span>адресник</span> на свой дом!</h2>
+                    </div>
+                    <h1>за 3500₽</h1>
+                    <div class="input-form">
+                        <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+                        <input type="text" name="phone" id="phone" placeholder="Ваш телефон" required>
+                        <input type="text" name="phone" id="phone" placeholder="Номер участка" required>
+                    </div>
+                    <button type="submit" href="#" class="btn open_modal">Купить</button>
+                    <div class="accord-form">
+                        <p>Нажимая на кнопку, я соглашаюсь <a href="./according.html">с политикой конфиденциальности</a>
+                            и политикой
+                            обработки персональных данных</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="order_call">
+        <div class="container">
+            <div class="call-main">
+                <div class="call-main_left">
+                    <div class="title">Не можете определиться? <br> Свяжитесь с нами!</div>
+                </div>
+                <div class="call-main_right">
+                    <a class="bt-call" href="javascript:void(0)" onclick="openFeedbackModal()">Позвонить</a>
+                    <a class="bt-call min" href="javascript:void(0)" onclick="openFeedbackModal()">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carta">
+        <div class="container">
+            <div class="carta-info">
+                <div class="catra-script">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac6baeb587df9321c089d6c5c38479e62cc986c0764db22018a5ec53eed96deba&amp;width=1360&amp;height=770&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="ct-form">
+                    <div class="head-form">
+                        <h2>Главный офис</h2>
+                    </div>
+                    <div class="img-form">
+                        <img src="./img/work.png" alt="">
+                    </div>
+                    <div class="info-form">
+                        <p>Бизнес Центр "Bellagio", Вологда</p>
+                        <p>Часы работы: с 10:00 до 19:00</p>
+                    </div>
+
+                    <a class="bt-form" href="javascript:void(0)" onclick="openFeedbackModal()">Записаться на
+                        экскурсию</a>
+                    <a class="bt2-form" href="./404.html">Проложить маршрут</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-info" id="office">
+                    <div class="ft-local">
+                        <p>Главный офис</p>
+                        <p class="light">Бизнес Центр "Bellagio"<br>Часы работы: с 10:00 до 19:00</p>
+                    </div>
+                    <div class="ft-mess">
+                        <p>Обратная связь</p>
+                        <p class="light">Есть жалоба или предложение?</p>
+                        <a href="javascript:void(0)" onclick="openFeedbackModal()" class="bt-ft">Написать директору</a>
+                    </div>
+                </div>
+                <div class="footer-menu">
+                    <div class="ft-company">
+                        <p>Компания</p>
+                        <a class="light" href="./about_us.html">О компании</a>
+                    </div>
+                    <div class="ft-service">
+                        <p>Сервис</p>
+                        <a class="light" href="./mortgage.html">Рассрочка</a>
+                        <a class="light" href="./installment.html">Ипотека</a>
+                    </div>
+                    <div class="ft-social">
+                        <p>Соцсети</p>
+                        <a class="light" href="#">ВКонтакте</a>
+                        <a class="light" href="#">Telegram</a>
+                        <a class="light" href="#">YouTube</a>
+                    </div>
+                    <div class="ft-contact">
+                        <p class="light">Телефон</p>
+                        <a target="_blank" href="tel:+749518916">+7 (495) 189-68-16</a>
+                        <p class="light">Почта</p>
+                        <a target="_blank" href="mailto:info@good-zem.com">info@good-zem.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-botoom">
+                <div class="ft-logo">
+                    <img src="./img/logo.png" alt="Земля35">
+                    <p class="light">© 2025 ИП Чикунов А.Н.</p>
+                </div>
+                <div class="ft-info">
+                    <div class="ft-accord light">
+                        <p>Обращаем ваше внимание на то, что вся представленная на сайте информация носит
+                            исключительно
+                            информационный характер и ни при каких условиях не является публичной офертой,
+                            определяемой
+                            положениями Статьи 437(2) Гражданского кодекса Российской Федерации. </p>
+                    </div>
+                    <div class="ft-accord light">
+                        <p>К нашему сайту подключен сервис веб-аналитики Яндекс. Метрика, использующий cookie.
+                            Оставаясь
+                            на сайте, выдаете свое согласие на обработку персональных данных с помощью этого сервиса
+                            в порядке, указанном в <a target="_blank" href="./according.html">Политике
+                                конфиденциальности.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copirat">
+                <p>Разработано Климасей</p>
+            </div>
+            <div id="authModal" class="modal">
+                <div class="modal-content">
+                    <span class="close"><img src="./img/close.png" alt=""></span>
+                    <div class="modal-content__top">
+                        <h2>Создайте аккаунт!</h2>
+                        <form class="modal-input_wrapper">
+                            <input type="text" placeholder="Логин" required>
+                            <input type="password" placeholder="Пароль" required>
+                            <div class="check-modal">
+                                <input type="checkbox" id="agreeCheckbox" required>
+                                <label for="agreeCheckbox">Я предпочитаю не получать уведомления по электронной почте о
+                                    рекламных акциях Земля35.</label>
+                            </div>
+                            <button type="submit" class="btn">Зарегестрироваться</button>
+                        </form>
+                    </div>
+                    <div class="modal-content__bot">
+                        <div class="modal-content__bot-head">
+                            <a href="#" onclick="openGoogleAuth()" class="bt-modal"><img src="./img/google.png"
+                                    alt="">Войти
+                                с
+                                помощью
+                                Google</a>
+                            <div class="have_acc">
+                                <p class="bold">У вас уже есть аккаунт?</p> <a href="#" onclick="openLoginModal()"
+                                    class="bold">Войти</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            Продолжая, я соглашаюсь с <a target="_blank" href="./according.html">политикой
+                                конфиденциальности</a>
+                            и политикой обработки персональных данных=
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <span class="close"><img src="./img/close.png" alt=""></span>
+                    <form class="modal-content__top">
+                        <h2>Войдите в свой аккаунт!</h2>
+                        <div class="modal-input_wrapper">
+                            <input type="text" placeholder="Логин" required>
+                            <input type="password" placeholder="Пароль" required>
+                            <button type="submit" class="btn">Войти</button>
+                        </div>
+                    </form>
+                    <div class="modal-content__bot">
+                        <div class="modal-content__bot-head">
+                            <a href="#" onclick="openGoogleAuth()" class="bt-modal">
+                                <img src="./img/google.png" alt="">Войти с помощью Google
+                            </a>
+                            <div class="have_acc">
+                                <p class="bold">У вас еще нет аккаунта?</p> <a href="#" onclick="openRegisterModal()"
+                                    class="bold">Зарегистрироваться</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            Продолжая, я соглашаюсь с <a target="_blank" href="./according.html">политикой
+                                конфиденциальности</a>
+                            и политикой обработки персональных данных
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="feedbackModal" class="writemodal">
+                <form class="modal-content">
+                    <div class="modal-main">
+                        <span class="close"><img src="./img/close.png" alt=""></span>
+                        <h2>Обращение в Земля35</h2>
+                        <p>Напишите ваше обращение, мы обязательно рассмотрим его</p>
+                        <div class="input-form">
+                            <input type="text" placeholder="Ваше имя" required>
+                            <div class="input-flex">
+                                <input type="text" placeholder="Номер телефона" required>
+                                <input type="email" placeholder="Почта" required>
+                            </div>
+                            <textarea placeholder="Ваше обращение" required></textarea>
+                        </div>
+                    </div>
+                    <button href="#" type="submit" class="btn">Отправить</button>
+                    <p>Нажимая на кнопку, я соглашаюсь <a target="_blank" href="./according.html">с политикой
+                            конфиденциальности</a> и политикой обработки персональных
+                        данных</p>
+                </form>
+            </div>
+            <div id="modal_return" class="modal">
+                <div class="modal-content">
+                    <p>Заявка успешно отправлена, мы свяжемся с вами в течение дня</p>
+                </div>
+            </div>
+            <script src="./js/script.js"></script>
+        </div>
+    </footer>
+</body>
+
+</html>

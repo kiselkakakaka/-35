@@ -1,0 +1,163 @@
+.baner-info {
+    background-image: url(../img/background-foto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 866.7px;
+    width: 100%;
+    margin-bottom: 103px;
+}
+
+.baner-info .baner-main {
+    max-width: 910px;
+    padding-top: 611px;
+    padding-left: 81px;
+    padding-bottom: 31px;
+}
+
+.baner-info .baner-main h1 {
+    color: var(--withe);
+}
+
+.baner-info .baner-main p {
+    color: var(--withe);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.catalog {
+    margin-bottom: 104px;
+}
+
+.catalog-cds {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 100%;
+    height: 454px;
+    border-radius: var(--CornerMedium);
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+}
+
+.card p {
+    color: var(--withe);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 17px 30px;
+}
+
+.catalog-cds .card-1 {
+    background-image: url(../img/electrichestvo.png);
+}
+
+.catalog-cds .card-2 {
+    background-image: url(../img/dorogi.png);
+}
+
+.catalog-cds .card-3 {
+    background-image: url(../img/priroda.png);
+}
+
+.catalog-cds .card-4 {
+    background-image: url(../img/ograjdenie.png);
+}
+
+.catalog-cds .card-5 {
+    background-image: url(../img/bolnica.png);
+}
+
+.catalog-cds .card-6 {
+    background-image: url(../img/rodnik.png);
+}
+
+.catalog-cds .card-7 {
+    background-image: url(../img/school.png);
+}
+
+.catalog-cds .card-8 {
+    background-image: url(../img/magazin.png);
+}
+
+.catalog .desc {
+    max-width: 922px;
+    font-weight: 400;
+    font-size: 20px
+}
+
+.back-form {
+    background-image: url(../img/background-fon2.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 27px;
+    max-width: 1360px;
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 103px;
+}
+
+.back-form .app-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 528px;
+    width: 100%;
+    padding: 35px 43px;
+    background-color: var(--withe);
+    border-radius: 27px;
+}
+
+.back-form .app-form .head-form h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.back-form .app-form .input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.back-form .app-form .input-form input {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 18px 24px;
+    background-color: var(--gray);
+    border: 1px var(--dark) solid;
+    border-radius: 21px;
+}
+
+.back-form .app-form .bt-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 19px;
+    background-color: var(--accent);
+    border: 1px var(--accent) solid;
+    border-radius: 21px;
+    transition: 0.3s all;
+    color: var(--withe);
+}
+
+.back-form .app-form .bt-form:hover {
+    background-color: var(--withe);
+    color: var(--accent);
+}
+
+.back-form .accord-form p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.back-form .accord-form a {
+    font-size: 16px;
+    background-color: var(--withe);
+    color: var(--accent);
+}
+

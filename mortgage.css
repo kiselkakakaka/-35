@@ -1,0 +1,199 @@
+.advantage.mortgage .advant-main {
+    /* padding-bottom: 136px; */
+}
+
+.advantage.mortgage .advant-main h2 {
+    max-width: 821px;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.advantage.mortgage .advant-main .advant-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.advantage.mortgage .advant-main .advant-cards .advant-card {
+    padding: 35px;
+    background-color: var(--gray);
+    border-radius: 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.advantage.mortgage .advant-main .advant-cards .advant-card .advant-card_title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.advantage.mortgage .advant-main .advant-cards .advant-card .light {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+.calculater-block {
+    background: var(--gray);
+    padding: 95px 0;
+    margin-bottom: 80px;
+}
+.calculater-block h2{
+    margin-bottom: 80px;
+}
+.calculater-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    .slider-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+
+        .slider-item-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .slider-item {
+                position: relative;
+                background: var(--withe);
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 20px 30px;
+                border-radius: 20px;
+                gap: 10px;
+
+                .slider-label {
+                    font-size: 18px;
+                    font-weight: 300;
+
+                }
+
+                input {
+                    position: absolute;
+                    bottom: 0%;
+                    width: 93%;
+                }
+            }
+
+            .min-max_value {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                padding: 0 20px;
+                    .value{
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: var(--dark);
+                    }
+            }
+        }
+    }
+
+
+
+    .result-container {
+        max-width: 580px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 50px;
+        background-color: var(--withe);
+        border-radius: 20px;
+        gap: 30px;
+
+        .result-container_top {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            .result-item {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .result-item_name {
+                    font-weight: 300;
+                    font-size: 18px;
+                    color: var(--dark);
+                }
+
+                .result-item_value {
+                    font-weight: 600;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .result-container_bot {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .policy-text {
+                color: var(--dark);
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
+
+    }
+
+}
+
+.calculater-block input[type="range"] {
+    -webkit-appearance: none;
+    /* Убираем стандартный стиль */
+    width: 100%;
+    height: 1px;
+    background: var(--accent);
+    /* Цвет полоски */
+    outline: none;
+    border: none;
+
+}
+
+.calculater-block input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Убираем стандартный стиль ползунка */
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: var(--accent);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.calculater-block input[type="range"]::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: green;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+
+
+.slider {
+    width: calc(100% - 300px);
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}

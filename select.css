@@ -1,0 +1,213 @@
+.baner-info {
+    background-image: url(../img/DJI_0089.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    max-height: 798px;
+    max-width: 1360px;
+    width: 100%;
+    margin-bottom: 86px;
+    border-radius: 27px;
+}
+
+.baner-info .baner-main {
+    max-width: 910px;
+    padding-top: 436px;
+    padding-left: 81px;
+    padding-bottom: 31px;
+}
+
+.baner-info .baner-main h1 {
+    color: var(--withe);
+    padding-top: 22px;
+}
+
+.baner-info .baner-main a {
+    background-color: var(--withe);
+    border-radius: var(--CornerMedium);
+    padding: 10px 17px;
+    margin-bottom: 12px;
+}
+
+.baner-info .baner-main p {
+    color: var(--withe);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+
+.back-form {
+    background-image: url(../img/background\ 1.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 27px;
+    max-width: 1360px;
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 109px;
+}
+
+.back-form .app-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 615px;
+    width: 100%;
+    padding: 35px 43px;
+    background-color: var(--withe);
+    border-radius: 27px;
+}
+
+.back-form .app-form .head-form h2 {
+    font-size: 32px;
+    margin-bottom: 42px;
+}
+
+.back-form .app-form h1 {
+    position: absolute;
+    top: 110px;
+    left: 263px;
+    transform: rotate(-1.6deg);
+    color: var(--accent);
+}
+
+.back-form .app-form .input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.back-form .app-form .input-form input {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 18px 24px;
+    background-color: var(--gray);
+    border: 1px var(--dark) solid;
+    border-radius: 21px;
+}
+
+.back-form .app-form .bt-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 19px;
+    background-color: var(--accent);
+    border: 1px var(--accent) solid;
+    border-radius: 21px;
+    transition: 0.3s all;
+    color: var(--withe);
+}
+
+.back-form .app-form .bt-form:hover {
+    background-color: var(--withe);
+    color: var(--accent);
+}
+
+.back-form .accord-form p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.back-form .accord-form a {
+    font-size: 16px;
+    background-color: var(--withe);
+    color: var(--accent);
+}
+
+.crt-category {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.crt-category .crt-category_item {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.search-container {
+    width: 423px;
+    position: relative;
+    background: rgba(242, 242, 242, 1);
+    padding: 45px 23px 25px 23px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    height: 52px;
+    position: absolute;
+    transform: translate(-50%, 20%);
+    top: 0;
+    left: 50%;
+    width: calc(100% - 42px);
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 17px;
+    box-sizing: border-box;
+}
+
+#resultsList::-webkit-scrollbar {
+    width: 13px;
+    height: 100px;
+}
+
+#resultsList::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 27px;
+}
+
+#resultsList::-webkit-scrollbar-thumb {
+    background: rgb(192, 192, 192);
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+
+#resultsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0 0 17px 17px;
+    padding: 14px 30px 0 20px;
+    overflow: auto;
+    max-height: 390px;
+}
+
+#resultsList li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.green-button {
+    background-color: var(--accent);
+    color: var(--withe);
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green-button:hover {
+    background-color: var(--withe);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}
